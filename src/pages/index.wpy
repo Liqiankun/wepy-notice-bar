@@ -1,0 +1,92 @@
+<style lang="less">
+.cell-ctn {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 30rpx;
+  text {
+    font-size: 24rpx;
+    color: #333;
+    margin-left: 30rpx;
+    margin-bottom: 10rpx;
+  }
+}
+</style>
+<template>
+  <view class="container">
+    <view class='cell-ctn'>
+      <text>普通通告栏</text>
+      <NoticeBar
+        :text.sync='text'
+        :leftIcon.sync='leftIcon'
+      />
+    </view>
+    <view class='cell-ctn'>
+      <text>延时通告栏</text>
+      <NoticeBar0
+        :text.sync='text'
+        :delay.sync='delay'
+        :leftIcon.sync='leftIcon'
+      />
+    </view>
+    <view class='cell-ctn'>
+      <text>低速通告栏</text>
+      <NoticeBar1
+        :text.sync='text'
+        :delay.sync='delay'
+        :speed.sync='speed'
+        :leftIcon.sync='leftIcon'
+      />
+    </view>
+    <view class='cell-ctn'>
+      <text>可关闭通告栏</text>
+      <NoticeBar2
+        :text.sync='text'
+        :closeable.sync='closeable'
+        :leftIcon.sync='leftIcon'
+      />
+    </view>
+    <view class='cell-ctn'>
+      <text>无图标通告栏</text>
+      <NoticeBar3
+        :text.sync='text'
+      />
+    </view>
+  </view>
+</template>
+
+<script>
+  import wepy from 'wepy'
+  import NoticeBar from  '../components/noticeBar'
+  export default class Index extends wepy.page {
+    config = {
+      navigationBarTitleText: 'NoticeBar'
+    }
+
+    components = {
+      NoticeBar,
+      NoticeBar0: NoticeBar,
+      NoticeBar1: NoticeBar,
+      NoticeBar2: NoticeBar,
+      NoticeBar3: NoticeBar
+    }
+
+    data = {
+      text: '要想坑得多，就上拼多多。拼得多，坑得多，一个三亿人都被坑的电商',
+      delay: 1000,
+      speed: 10,
+      closeable: true,
+      leftIcon: '../images/notifi.png',
+    }
+
+    onLoad () {
+      this.$invoke('NoticeBar', 'animate')
+      this.$invoke('NoticeBar0', 'animate')
+      this.$invoke('NoticeBar1', 'animate')
+      this.$invoke('NoticeBar2', 'animate')
+      this.$invoke('NoticeBar3', 'animate')
+    }
+  }
+</script>
