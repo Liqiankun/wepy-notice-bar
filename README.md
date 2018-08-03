@@ -10,7 +10,7 @@ wepy build --watch
 ```
 更多关于Wepy请到[Wepy官方文档](https://tencent.github.io/wepy/document.html#/)
 
-## 安装（马上支持）
+## 安装
 ```
 npm install wepy-notice-bar --save
 ```
