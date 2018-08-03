@@ -1,7 +1,7 @@
 ![](https://github.com/Liqiankun/DLNoticeBar/blob/master/noticeBar.png)
 
 ## 说明
-一个可以滚动的通知栏，在WEPY完美运行。支持多种样式，可以自定义滚动时间，演示，是否可关闭和图标。
+一个可以滚动的通知栏，在WEPY完美运行。支持多种样式，可以自定义滚动时间，延时，是否可关闭和图标自定义。
 
 ## 运行项目
 ```
