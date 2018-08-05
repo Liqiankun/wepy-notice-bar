@@ -1,5 +1,7 @@
 ![](https://github.com/Liqiankun/DLNoticeBar/blob/master/noticeBar.png)
 
+[![npm package](https://nodei.co/npm/wepy-notice-bar.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/wepy-notice-bar)
+
 ## 说明
 一个可以滚动的通知栏，在WEPY完美运行。支持多种样式，可以自定义滚动时间，延时，是否可关闭和图标自定义。
 
