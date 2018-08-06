@@ -45,6 +45,7 @@
       <NoticeBar2
         :text.sync='text'
         :closeable.sync='closeable'
+        :closeIcon.sync='closeIcon'
         :leftIcon.sync='leftIcon'
       />
     </view>
@@ -52,6 +53,7 @@
       <text>无图标通告栏</text>
       <NoticeBar3
         :text.sync='text'
+        backgroundColor='#ccc'
       />
     </view>
   </view>
@@ -59,7 +61,7 @@
 
 <script>
   import wepy from 'wepy'
-  import NoticeBar from  '../components/noticeBar'
+  import NoticeBar from  'wepy-notice-bar'
   export default class Index extends wepy.page {
     config = {
       navigationBarTitleText: 'NoticeBar'
@@ -79,6 +81,7 @@
       speed: 10,
       closeable: true,
       leftIcon: '../images/notifi.png',
+      closeIcon: '../images/close.png'
     }
 
     onLoad () {
