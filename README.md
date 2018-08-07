@@ -27,7 +27,7 @@ import NoticeBar from 'wepy-notice-bar'
       <text>普通通告栏</text>
       <NoticeBar
         :text.sync='text'
-        :leftIcon.sync='leftIcon'
+        leftIcon='../images/close.png'
       />
     </view>
   </view>
