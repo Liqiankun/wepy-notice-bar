@@ -28,7 +28,7 @@
       <NoticeBar0
         :text.sync='text'
         :delay.sync='delay'
-        :leftIcon.sync='leftIcon'
+        leftIcon='../images/notifi.png'
       />
     </view>
     <view class='cell-ctn'>
@@ -37,7 +37,7 @@
         :text.sync='text'
         :delay.sync='delay'
         :speed.sync='speed'
-        :leftIcon.sync='leftIcon'
+        leftIcon='../images/notifi.png'
       />
     </view>
     <view class='cell-ctn'>
@@ -45,8 +45,8 @@
       <NoticeBar2
         :text.sync='text'
         :closeable.sync='closeable'
-        :closeIcon.sync='closeIcon'
-        :leftIcon.sync='leftIcon'
+        closeIcon='../images/close.png'
+        leftIcon='../images/notifi.png'
       />
     </view>
     <view class='cell-ctn'>
@@ -79,9 +79,7 @@
       text: '要想坑得多，就上拼多多。拼得多，坑得多，一个三亿人都被坑的电商',
       delay: 1000,
       speed: 10,
-      closeable: true,
-      leftIcon: '../images/notifi.png',
-      closeIcon: '../images/close.png'
+      closeable: true
     }
 
     onLoad () {

@@ -20,7 +20,7 @@
     "wepy": "^1.7.2",
     "wepy-async-function": "^1.4.4",
     "wepy-com-toast": "^1.0.2",
-    "wepy-notice-bar": "^1.0.4"
+    "wepy-notice-bar": "^1.0.5"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.1",
