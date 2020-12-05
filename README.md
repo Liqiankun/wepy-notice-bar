@@ -10,7 +10,7 @@
 npm install wepy-cli -g
 wepy build --watch
 ```
-更多关于Wepy请到[Wepy官方文档](https://tencent.github.io/wepy/document.html#/)
+更多关于Wepy请到[Wepy官方文档](https://wepyjs.github.io/wepy-docs/2.x/#/base/getstart)
 
 ## 安装
 ```
